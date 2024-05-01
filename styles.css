@@ -1,0 +1,15 @@
+nav {
+  position: fixed;
+}
+
+.__nav-wrap {
+  width: 20% ;
+}
+
+.__main-doc {
+  width: 80%;
+}
+
+.__d-flex {
+  display: flex;
+}
