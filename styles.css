@@ -1,20 +1,42 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #00ffeb;
 }
 
 nav {
   position: sticky;
-  border: 1px solid red;
   width: 100%;
   top: 0;
 }
 
+nav ul li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 body {
   font-family: "Exo";
+  background: black;
+  color: white;
 }
 
 header {
-  color: black;
+  color: white;
   margin: 10px;
   text-align: center;
   font-size: 1.8em;
