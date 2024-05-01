@@ -48,79 +48,58 @@
       <header>Introduction</header>
       <article>
         <p>
-          PHP is a dynamically typed language, which means that by default there is no need to specify the type of a variable, as this will be determined at runtime. However, it is possible to statically type some aspect of the language via the use of type declarations.
+          PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.
         </p>
 
         <p>
-          Types restrict the kind of operations that can be performed on them. However, if an expression/variable is used in an operation which its type does not support, PHP will attempt to type juggle the value into a type that supports the operation. This process depends on the context in which the value is used. For more information, see the section on Type Juggling.
+          Nice, but what does that mean? An example:
         </p>
         <ul>
           <li>
-            It is possible to force an expression to be evaluated to a certain type by using a type cast. A variable can also be type cast in-place by using the settype() function on it.
+            Instead of lots of commands to output HTML (as seen in C or Perl), PHP pages contain HTML with embedded code that does "something" (in this case, output "Hi, I'm a PHP script!"). The PHP code is enclosed in special start and end processing instructions <?php and ?> that allow you to jump into and out of "PHP mode."
           </li>
           <li>
-            To check the value and type of an expression, use the var_dump() function. To retrieve the type of an expression, use the get_debug_type() function. However, to check if an expression is of a certain type use the is_type functions instead.
+            What distinguishes PHP from something like client-side JavaScript is that the code is executed on the server, generating HTML which is then sent to the client. The client would receive the results of running that script, but would not know what the underlying code was. You can even configure your web server to process all your HTML files with PHP, and then there's really no way that users can tell what you have up your sleeve.
           </li>
         </ul>
       </article>
     </section>
     <section class="main-section" id="What_you_should_already_know">
-      <header>What you should already know</header>
+      <header>A simple tutorial</header>
       <article>
-        <p>This guide assumes you have the following basic background:</p>
+        <p>Here we would like to show the very basics of PHP in a short, simple tutorial. This text only deals with dynamic web page creation with PHP, though PHP is not only capable of creating web pages. See the section titled What can PHP do for more information.</p>
 
         <ul>
           <li>
-            A general understanding of the Internet and the World Wide Web
-            (WWW).
+            The point of the example is to show the special PHP tag format. In this example we used <?php to indicate the start of a PHP tag. Then we put the PHP statement and left PHP mode by adding the closing tag, ?>. You may jump in and out of PHP mode in an HTML file like this anywhere you want. For more details, read the manual section on the basic PHP syntax.
           </li>
           <li>Good working knowledge of HyperText Markup Language (HTML).</li>
           <li>
-            Some programming experience. If you are new to programming, try
-            one of the tutorials linked on the main page about JavaScript.
+            Now that you have successfully created a working PHP script, it is time to create the most famous PHP script! Make a call to the phpinfo() function and you will see a lot of useful information about your system and setup such as available predefined variables, loaded PHP modules, and configuration settings. Take some time and review this important information.
           </li>
         </ul>
       </article>
     </section>
     <section class="main-section" id="JavaScript_and_Java">
-      <header>JavaScript and Java</header>
+      <header>What do I need?</header>
       <article>
         <p>
-          JavaScript and Java are similar in some ways but fundamentally
-          different in some others. The JavaScript language resembles Java but
-          does not have Java's static typing and strong type checking.
-          JavaScript follows most Java expression syntax, naming conventions
-          and basic control-flow constructs which was the reason why it was
-          renamed from LiveScript to JavaScript.
+          In this tutorial we assume that your server has activated support for PHP and that all files ending in .php are handled by PHP. On most servers, this is the default extension for PHP files, but ask your server administrator to be sure. If your server supports PHP, then you do not need to do anything. Just create your .php files, put them in your web directory and the server will automatically parse them for you. There is no need to compile anything nor do you need to install any extra tools. Think of these PHP-enabled files as simple HTML files with a whole new family of magical tags that let you do all sorts of things.
         </p>
 
         <p>
-          In contrast to Java's compile-time system of classes built by
-          declarations, JavaScript supports a runtime system based on a small
-          number of data types representing numeric, Boolean, and string
-          values. JavaScript has a prototype-based object model instead of the
-          more common class-based object model. The prototype-based model
-          provides dynamic inheritance; that is, what is inherited can vary
-          for individual objects. JavaScript also supports functions without
-          any special declarative requirements. Functions can be properties of
-          objects, executing as loosely typed methods.
+          Let us say you want to save precious bandwidth and develop locally. In this case, you will want to install a web server, such as » Apache, and of course » PHP. You will most likely want to install a database as well, such as » MySQL.
         </p>
         <p>
-          JavaScript is a very free-form language compared to Java. You do not
-          have to declare all variables, classes, and methods. You do not have
-          to be concerned with whether methods are public, private, or
-          protected, and you do not have to implement interfaces. Variables,
-          parameters, and function return types are not explicitly typed.
+          You can either install these individually or choose a simpler way. Our manual has installation instructions for PHP (assuming you already have some web server set up). If you have problems with installing PHP yourself, we would suggest you ask your questions on our » installation mailing list. If you choose to go on the simpler route, then » locate a pre-configured package for your operating system, which automatically installs all of these with just a few mouse clicks. It is easy to setup a web server with PHP support on any operating system, including MacOSX, Linux and Windows. On Linux, you may find » rpmfind and » PBone helpful for locating RPMs. You may also want to visit » apt-get to find packages for Debian.
         </p>
       </article>
     </section>
     <section class="main-section" id="Hello_world">
       <header>Hello world</header>
       <article>
-        To get started with writing JavaScript, open the Scratchpad and write
-        your first "Hello world" JavaScript code:
-        <code>function greetMe(yourName) { alert("Hello " + yourName); }
-          greetMe("World");
+        Create a file named hello.php and put it in your web server's root directory (DOCUMENT_ROOT) with the following content:
+        <code>php phpinfo();
         </code>
 
         Select the code in the pad and hit Ctrl+R to watch it unfold in your
@@ -130,39 +109,31 @@
     <section class="main-section" id="Variables">
       <header>Variables</header>
       <p>
-        You use variables as symbolic names for values in your application.
-        The names of variables, called identifiers, conform to certain rules.
+        Variables in PHP are represented by a dollar sign followed by the name of the variable. The variable name is case-sensitive.
       </p>
       <p>
-        A JavaScript identifier must start with a letter, underscore (_), or
-        dollar sign ($); subsequent characters can also be digits (0-9).
-        Because JavaScript is case sensitive, letters include the characters
-        "A" through "Z" (uppercase) and the characters "a" through "z"
-        (lowercase).
+        Variable names follow the same rules as other labels in PHP. A valid variable name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. As a regular expression, it would be expressed thus: ^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$
       </p>
       <p>
-        You can use ISO 8859-1 or Unicode letters such as å and ü in
-        identifiers. You can also use the Unicode escape sequences as
-        characters in identifiers. Some examples of legal names are
-        Number_hits, temp99, and _name.
+        For our purposes here, a letter is a-z, A-Z, and the bytes from 128 through 255 (0x80-0xff).
       </p>
     </section>
     <section class="main-section" id="Declaring_variables">
       <header>Declaring variables</header>
       <article>
-        You can declare a variable in three ways:
+        For information on variable related functions, see the Variable Functions Reference.
         <p>
-          With the keyword var. For example, <code>var x = 42.</code> This
+          With the keyword var. For example, <code>$var = 'Bob';</code> This
           syntax can be used to declare both local and global variables.
         </p>
         <p>
           By simply assigning it a value. For example,
-          <code>x = 42.</code> This always declares a global variable. It
+          <code>$foo = 'Bob'; </code> This always declares a global variable. It
           generates a strict JavaScript warning. You shouldn't use this
           variant.
         </p>
         <p>
-          With the keyword let. For example,<code> let y = 13.</code> This
+          With the keyword let. For example,<code> $foo = 25;</code> This
           syntax can be used to declare a block scope local variable. See
           Variable scope below.
         </p>
