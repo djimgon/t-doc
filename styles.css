@@ -54,6 +54,7 @@ nav header {
 
 .__d-flex {
   display: flex;
+  flex-direction: row;
 }
 
 .__nav-wrap {
@@ -78,4 +79,17 @@ code {
   margin: 10px;
   border-radius: 5px;
   color: black;
+}
+
+@media only screen and (max-width: 815px) {
+  .__d-flex {
+    flex-direction: column;
+  }
+  .__nav-wrap {
+    width: 100%;
+  }
+
+  .__main-doc {
+    width: 100%;
+  }
 }
