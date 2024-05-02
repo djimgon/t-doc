@@ -48,7 +48,8 @@
       <header>Introduction</header>
       <article>
         <p>
-          PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.
+          PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting
+          language that is especially suited for web development and can be embedded into HTML.
         </p>
 
         <p>
@@ -56,49 +57,77 @@
         </p>
         <ul>
           <li>
-            Instead of lots of commands to output HTML (as seen in C or Perl), PHP pages contain HTML with embedded code that does "something" (in this case, output "Hi, I'm a PHP script!"). The PHP code is enclosed in special start and end processing instructions <?php and ?> that allow you to jump into and out of "PHP mode."
+            Instead of lots of commands to output HTML (as seen in C or Perl), PHP pages contain HTML with embedded code
+            that does "something" (in this case, output "Hi, I'm a PHP script!"). The PHP code is enclosed in special
+            start and end processing instructions <?php and ?> that allow you to jump into and out of "PHP mode."
           </li>
           <li>
-            What distinguishes PHP from something like client-side JavaScript is that the code is executed on the server, generating HTML which is then sent to the client. The client would receive the results of running that script, but would not know what the underlying code was. You can even configure your web server to process all your HTML files with PHP, and then there's really no way that users can tell what you have up your sleeve.
+            What distinguishes PHP from something like client-side JavaScript is that the code is executed on the
+            server, generating HTML which is then sent to the client. The client would receive the results of running
+            that script, but would not know what the underlying code was. You can even configure your web server to
+            process all your HTML files with PHP, and then there's really no way that users can tell what you have up
+            your sleeve.
           </li>
         </ul>
       </article>
     </section>
     <section class="main-section" id="What_you_should_already_know">
-      <header>A simple tutorial</header>
+      <header>Simple Example</header>
       <article>
-        <p>Here we would like to show the very basics of PHP in a short, simple tutorial. This text only deals with dynamic web page creation with PHP, though PHP is not only capable of creating web pages. See the section titled What can PHP do for more information.</p>
+        <p>Here we would like to show the very basics of PHP in a short, simple tutorial. This text only deals with
+          dynamic web page creation with PHP, though PHP is not only capable of creating web pages. See the section
+          titled What can PHP do for more information.</p>
 
         <ul>
           <li>
-            The point of the example is to show the special PHP tag format. In this example we used <?php to indicate the start of a PHP tag. Then we put the PHP statement and left PHP mode by adding the closing tag, ?>. You may jump in and out of PHP mode in an HTML file like this anywhere you want. For more details, read the manual section on the basic PHP syntax.
+            The point of the example is to show the special PHP tag format. In this example we
+            used <?php to indicate the start of a PHP tag. Then we put the PHP statement and left PHP mode by adding the closing tag, ?>
+            . You may jump in and out of PHP mode in an HTML file like this anywhere you want. For more details, read
+            the manual section on the basic PHP syntax.
           </li>
           <li>Good working knowledge of HyperText Markup Language (HTML).</li>
           <li>
-            Now that you have successfully created a working PHP script, it is time to create the most famous PHP script! Make a call to the phpinfo() function and you will see a lot of useful information about your system and setup such as available predefined variables, loaded PHP modules, and configuration settings. Take some time and review this important information.
+            Now that you have successfully created a working PHP script, it is time to create the most famous PHP
+            script! Make a call to the phpinfo() function and you will see a lot of useful information about your system
+            and setup such as available predefined variables, loaded PHP modules, and configuration settings. Take some
+            time and review this important information.
           </li>
         </ul>
       </article>
     </section>
     <section class="main-section" id="JavaScript_and_Java">
-      <header>What do I need?</header>
+      <header>What Do I Need?</header>
       <article>
         <p>
-          In this tutorial we assume that your server has activated support for PHP and that all files ending in .php are handled by PHP. On most servers, this is the default extension for PHP files, but ask your server administrator to be sure. If your server supports PHP, then you do not need to do anything. Just create your .php files, put them in your web directory and the server will automatically parse them for you. There is no need to compile anything nor do you need to install any extra tools. Think of these PHP-enabled files as simple HTML files with a whole new family of magical tags that let you do all sorts of things.
+          In this tutorial we assume that your server has activated support for PHP and that all files ending in .php
+          are handled by PHP. On most servers, this is the default extension for PHP files, but ask your server
+          administrator to be sure. If your server supports PHP, then you do not need to do anything. Just create your
+          .php files, put them in your web directory and the server will automatically parse them for you. There is no
+          need to compile anything nor do you need to install any extra tools. Think of these PHP-enabled files as
+          simple HTML files with a whole new family of magical tags that let you do all sorts of things.
         </p>
 
         <p>
-          Let us say you want to save precious bandwidth and develop locally. In this case, you will want to install a web server, such as » Apache, and of course » PHP. You will most likely want to install a database as well, such as » MySQL.
+          Let us say you want to save precious bandwidth and develop locally. In this case, you will want to install a
+          web server, such as » Apache, and of course » PHP. You will most likely want to install a database as well,
+          such as » MySQL.
         </p>
         <p>
-          You can either install these individually or choose a simpler way. Our manual has installation instructions for PHP (assuming you already have some web server set up). If you have problems with installing PHP yourself, we would suggest you ask your questions on our » installation mailing list. If you choose to go on the simpler route, then » locate a pre-configured package for your operating system, which automatically installs all of these with just a few mouse clicks. It is easy to setup a web server with PHP support on any operating system, including MacOSX, Linux and Windows. On Linux, you may find » rpmfind and » PBone helpful for locating RPMs. You may also want to visit » apt-get to find packages for Debian.
+          You can either install these individually or choose a simpler way. Our manual has installation instructions
+          for PHP (assuming you already have some web server set up). If you have problems with installing PHP yourself,
+          we would suggest you ask your questions on our » installation mailing list. If you choose to go on the simpler
+          route, then » locate a pre-configured package for your operating system, which automatically installs all of
+          these with just a few mouse clicks. It is easy to setup a web server with PHP support on any operating system,
+          including MacOSX, Linux and Windows. On Linux, you may find » rpmfind and » PBone helpful for locating RPMs.
+          You may also want to visit » apt-get to find packages for Debian.
         </p>
       </article>
     </section>
     <section class="main-section" id="Hello_world">
-      <header>Hello world</header>
+      <header>Hello World</header>
       <article>
-        Create a file named hello.php and put it in your web server's root directory (DOCUMENT_ROOT) with the following content:
+        Create a file named hello.php and put it in your web server's root directory (DOCUMENT_ROOT) with the following
+        content:
         <code>php phpinfo();
         </code>
 
@@ -109,17 +138,20 @@
     <section class="main-section" id="Variables">
       <header>Variables</header>
       <p>
-        Variables in PHP are represented by a dollar sign followed by the name of the variable. The variable name is case-sensitive.
+        Variables in PHP are represented by a dollar sign followed by the name of the variable. The variable name is
+        case-sensitive.
       </p>
       <p>
-        Variable names follow the same rules as other labels in PHP. A valid variable name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. As a regular expression, it would be expressed thus: ^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$
+        Variable names follow the same rules as other labels in PHP. A valid variable name starts with a letter or
+        underscore, followed by any number of letters, numbers, or underscores. As a regular expression, it would be
+        expressed thus: ^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$
       </p>
       <p>
         For our purposes here, a letter is a-z, A-Z, and the bytes from 128 through 255 (0x80-0xff).
       </p>
     </section>
     <section class="main-section" id="Declaring_variables">
-      <header>Declaring variables</header>
+      <header>Declaring Variables</header>
       <article>
         For information on variable related functions, see the Variable Functions Reference.
         <p>
@@ -140,37 +172,53 @@
       </article>
     </section>
     <section class="main-section" id="Variable_scope">
-      <header>Variable scope</header>
+      <header>Variable Scope</header>
       <article>
         <p>
-          The scope of a variable is the context within which it is defined. For the most part all PHP variables only have a single scope. This single scope spans included and required files as well. For example:
+          The scope of a variable is the context within which it is defined. For the most part all PHP variables only
+          have a single scope. This single scope spans included and required files as well. For example:
         </p>
         <code>$a = 1;
           include 'b.inc';</code>
         <p>
-          This behavior changes, when using the let declaration introduced in
-          ECMAScript 2015.
+          Here the $a variable will be available within the included b.inc script. However, within user-defined
+          functions a local function scope is introduced. Any variable used inside a function is by default limited to
+          the local function scope. For example:
         </p>
 
-        <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is
-          not defined</code>
+        <code>$a = 1; /* global scope */
+
+          function test()
+          {
+          echo $a; /* reference to local scope variable */
+          }
+
+          test();</code>
       </article>
     </section>
     <section class="main-section" id="Global_variables">
-      <header>Global variables</header>
+      <header>Global Variables</header>
       <article>
         <p>
-          Global variables are in fact properties of the global object. In web
-          pages the global object is window, so you can set and access global
-          variables using the window.variable syntax.
+          First, an example use of global:
         </p>
+        <code>$a = 1;
+          $b = 2;
 
+          function Sum()
+          {
+          global $a, $b;
+
+          $b = $a + $b;
+          }
+
+          Sum();
+          echo $b;
+        </code>
         <p>
-          Consequently, you can access global variables declared in one window
-          or frame from another window or frame by specifying the window or
-          frame name. For example, if a variable called phoneNumber is
-          declared in a document, you can refer to this variable from an
-          iframe as parent.phoneNumber.
+          The above script will output 3. By declaring $a and $b global within the function, all references to either
+          variable will refer to the global version. There is no limit to the number of global variables that can be
+          manipulated by a function.
         </p>
       </article>
     </section>
@@ -178,206 +226,134 @@
       <header>Constants</header>
       <article>
         <p>
-          You can create a read-only, named constant with the const keyword.
-          The syntax of a constant identifier is the same as for a variable
-          identifier: it must start with a letter, underscore or dollar sign
-          and can contain alphabetic, numeric, or underscore characters.
+          A constant is an identifier (name) for a simple value. As the name suggests, that value cannot change during
+          the execution of the script (except for magic constants, which aren't actually constants). Constants are
+          case-sensitive. By convention, constant identifiers are always uppercase.
         </p>
-
-        <code>const PI = 3.14;</code>
         <p>
-          A constant cannot change value through assignment or be re-declared
-          while the script is running. It has to be initialized to a value.
+          The name of a constant follows the same rules as any label in PHP. A valid constant name starts with a letter
+          or underscore, followed by any number of letters, numbers, or underscores. As a regular expression, it would
+          be expressed thusly: ^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$
         </p>
 
         <p>
-          The scope rules for constants are the same as those for let block
-          scope variables. If the const keyword is omitted, the identifier is
-          assumed to represent a variable.
+          It is possible to define() constants with reserved or even invalid names, whose value can only be retrieved
+          with the constant() function. However, doing so is not recommended.
         </p>
+        <code>// Valid constant names
+          define("FOO", "something");
+          define("FOO2", "something else");
+          define("FOO_BAR", "something more");
 
-        <p>
-          You cannot declare a constant with the same name as a function or
-          variable in the same scope. For example:
-        </p>
+          // Invalid constant names
+          define("2FOO", "something");
 
-        <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
-          WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-          //statements }</code>
-        However, object attributes are not protected, so the following
-        statement is executed without problems.
-        <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
-          "otherValue";</code>
+          // This is valid, but should be avoided:
+          // PHP may one day provide a magical constant
+          // that will break your script
+          define("__FOO__", "something");
+        </code>
       </article>
     </section>
     <section class="main-section" id="Data_types">
-      <header>Data types</header>
+      <header>Data Types</header>
       <article>
-        <p>The latest ECMAScript standard defines seven data types:</p>
+        <p>Data Types define the type of data a variable can store. PHP allows eight different types of data types. All
+          of them are discussed below. There are pre-defined, user-defined, and special data types.</p>
         <ul>
           <li>
-            <p>Six data types that are primitives:</p>
+            <p>It holds only single value. There are 4 scalar data types in PHP.</p>
             <ul>
-              <li>Boolean. true and false.</li>
+              <li>boolean</li>
               <li>
-                null. A special keyword denoting a null value. Because
-                JavaScript is case-sensitive, null is not the same as Null,
-                NULL, or any other variant.
+                integer
               </li>
               <li>
-                undefined. A top-level property whose value is undefined.
+                float
               </li>
-              <li>Number. 42 or 3.14159.</li>
-              <li>String. "Howdy"</li>
-              <li>
-                Symbol (new in ECMAScript 2015). A data type whose instances
-                are unique and immutable.
-              </li>
+              <li>string</li>
             </ul>
           </li>
 
           <li>and Object</li>
         </ul>
-        Although these data types are a relatively small amount, they enable
-        you to perform useful functions with your applications. Objects and
-        functions are the other fundamental elements in the language. You can
-        think of objects as named containers for values, and functions as
-        procedures that your application can perform.
       </article>
     </section>
     <section class="main-section" id="if...else_statement">
-      <header>if...else statement</header>
+      <header>if...else Statement</header>
       <article>
-        Use the if statement to execute a statement if a logical condition is
-        true. Use the optional else clause to execute a statement if the
-        condition is false. An if statement looks as follows:
-
-        <code>if (condition) { statement_1; } else { statement_2; }</code>
-        condition can be any expression that evaluates to true or false. See
-        Boolean for an explanation of what evaluates to true and false. If
-        condition evaluates to true, statement_1 is executed; otherwise,
-        statement_2 is executed. statement_1 and statement_2 can be any
-        statement, including further nested if statements.
-        <p>
-          You may also compound the statements using else if to have multiple
-          conditions tested in sequence, as follows:
-        </p>
-        <code>if (condition_1) { statement_1; } else if (condition_2) {
-          statement_2; } else if (condition_n) { statement_n; } else {
-          statement_last; }
+        Conditional statements are used to perform different actions based on different conditions. Very often when you
+        write code, you want to perform different actions for different conditions. You can use conditional statements
+        in your code to do this.
+        In PHP we have the following conditional statements:
+        <ul>
+          <li>if statement - executes some code if one condition is true</li>
+          <li>if...else statement - executes some code if a condition is true and another code if that condition is
+            false
+          </li>
+          <li>if...elseif...else statement - executes different codes for more than two conditions</li>
+          <li>switch statement - selects one of many blocks of code to be executed</li>
+        </ul>
+        <code>if (condition) {
+          // code to be executed if condition is true;
+          }
         </code>
-        In the case of multiple conditions only the first logical condition
-        which evaluates to true will be executed. To execute multiple
-        statements, group them within a block statement ({ ... }) . In
-        general, it's good practice to always use block statements, especially
-        when nesting if statements:
-
-        <code>if (condition) { statement_1_runs_if_condition_is_true;
-          statement_2_runs_if_condition_is_true; } else {
-          statement_3_runs_if_condition_is_false;
-          statement_4_runs_if_condition_is_false; }</code>
-        It is advisable to not use simple assignments in a conditional
-        expression, because the assignment can be confused with equality when
-        glancing over the code. For example, do not use the following code:
-        <code>if (x = y) { /* statements here */ }</code> If you need to use
-        an assignment in a conditional expression, a common practice is to put
-        additional parentheses around the assignment. For example:
-
-        <code>if ((x = y)) { /* statements here */ }</code>
       </article>
     </section>
     <section class="main-section" id="while_statement">
-      <header>while statement</header>
+      <header>While Statement</header>
       <article>
-        A while statement executes its statements as long as a specified
-        condition evaluates to true. A while statement looks as follows:
-
-        <code>while (condition) statement</code> If the condition becomes
-        false, statement within the loop stops executing and control passes to
-        the statement following the loop.
-
+        While loops are the simplest type of loop in PHP. They behave just like their C counterparts. The basic form of
+        a while statement is:
+        <code>while (expr)
+          statement
+        </code>
         <p>
-          The condition test occurs before statement in the loop is executed.
-          If the condition returns true, statement is executed and the
-          condition is tested again. If the condition returns false, execution
-          stops and control is passed to the statement following while.
+          The meaning of a while statement is simple. It tells PHP to execute the nested statement(s) repeatedly, as
+          long as the while expression evaluates to true. The value of the expression is checked each time at the
+          beginning of the loop, so even if this value changes during the execution of the nested statement(s),
+          execution will not stop until the end of the iteration (each time PHP runs the statements in the loop is one
+          iteration). If the while expression evaluates to false from the very beginning, the nested statement(s) won't
+          even be run once.
         </p>
+        <code>/* example 1 */
+          $i = 1;
+          while ($i <= 10) {
+          echo $i++; /* the printed value would be
+          $i before the increment
+          (post-increment) */
+          }
 
-        <p>
-          To execute multiple statements, use a block statement ({ ... }) to
-          group those statements.
-        </p>
+          /* example 2 */
 
-        Example:
-
-        <p>
-          The following while loop iterates as long as n is less than three:
-        </p>
-
-        <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
-        <p>
-          With each iteration, the loop increments n and adds that value to x.
-          Therefore, x and n take on the following values:
-        </p>
-
-        <ul>
-          <li>After the first pass: n = 1 and x = 1</li>
-          <li>After the second pass: n = 2 and x = 3</li>
-          <li>After the third pass: n = 3 and x = 6</li>
-        </ul>
-        <p>
-          After completing the third pass, the condition n &lt; 3 is no longer
-          true, so the loop terminates.
-        </p>
+          $i = 1;
+          while ($i <= 10):
+          echo $i;
+          $i++;
+          endwhile;
+        </code>
       </article>
     </section>
     <section class="main-section" id="Function_declarations">
-      <header>Function declarations</header>
+      <header>Type Declarations</header>
       <article>
-        A function definition (also called a function declaration, or function
-        statement) consists of the function keyword, followed by:
-
-        <ul>
-          <li>The name of the function.</li>
-          <li>
-            A list of arguments to the function, enclosed in parentheses and
-            separated by commas.
-          </li>
-          <li>
-            The JavaScript statements that define the function, enclosed in
-            curly brackets, { }.
-          </li>
-        </ul>
-        <p>
-          For example, the following code defines a simple function named
-          square:
-        </p>
-
-        <code>function square(number) { return number * number; }</code>
-        <p>
-          The function square takes one argument, called number. The function
-          consists of one statement that says to return the argument of the
-          function (that is, number) multiplied by itself. The return
-          statement specifies the value returned by the function.
-        </p>
-        <code>return number * number;</code>
-        <p>
-          Primitive parameters (such as a number) are passed to functions by
-          value; the value is passed to the function, but if the function
-          changes the value of the parameter, this change is not reflected
-          globally or in the calling function.
-        </p>
+        Type declarations can be added to function arguments, return values, and, as of PHP 7.4.0, class properties.
+        They ensure that the value is of the specified type at call time, otherwise a TypeError is thrown.
+        Every single type that PHP supports, with the exception of resource can be used within a user-land type
+        declaration. This page contains a changelog of availability of the different types and documentation about usage
+        of them in type declarations.
+        <code>function test(boolean $param) {}
+          test(true);
+        </code>
       </article>
     </section>
     <section class="main-section" id="Reference">
       <header>Reference</header>
       <article>
-        <ul>
-          <li>
-            All the documentation in this page is taken from
-            <a href="https://www.php.net/manual/en/language.basic-syntax.php" target="_blank">Php Manual</a>
-          </li>
-        </ul>
+        <p class="__end">
+          All the documentation in this page is taken from
+          <a href="https://www.php.net/manual/en/language.basic-syntax.php" target="_blank">Php Manual</a>
+        </p>
       </article>
     </section>
   </main>

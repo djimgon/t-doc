@@ -8,6 +8,10 @@ a {
   color: #00ffeb;
 }
 
+p {
+  padding: 1rem 0;
+}
+
 nav {
   position: sticky;
   width: 100%;
@@ -79,6 +83,10 @@ code {
   margin: 10px;
   border-radius: 5px;
   color: black;
+}
+
+.__end {
+  text-align: center;
 }
 
 @media only screen and (max-width: 815px) {
